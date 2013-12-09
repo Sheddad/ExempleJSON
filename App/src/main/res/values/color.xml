@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#ff0a0a0a</color>
+    <color name="grey">#898782</color>
+    <color name="red_cotxe">#C27D57</color>
+    <color name="white_cotxe">#F3E5DD</color>
+    <color name="yellow_mapes">#DFAD49</color>
+    <color name="white_mapes">#FCF7EC</color>
+    <color name="white_temps">#F5E6C8</color>
+    <color name="grey_temps">#898782</color>
+    <color name="yellow_presumir">#FFD966</color>
+    <color name="brown_presumir">#A0844F</color>
+    <color name="white_sos">#FFF8CC</color>
+    <color name="green_sos">#99BC8D</color>
+    <color name="green_preferencies">#717A68</color>
+    <color name="white_preferencies">#D4D7D1</color>
+    <color name="red">#BD0926</color>
+    <color name="blue">#ff2e08ff</color>
+    <!--
+    Color transparent. Els dos primers digits son el grau de 
+    opacitat, de 0% a 100%. El màxim és ff. Els sis restants el color.
+    En aquest cas negre.
+    -->
+    <color name="translucent_black">#aa000000</color>
+
+</resources>

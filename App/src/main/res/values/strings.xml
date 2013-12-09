@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exemple JSON</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pred_manresa">Predicció a Manresa</string>
+    <string name="cercar">CERCAR</string>
+    <string name="avui">AVUI</string>
+    <string name="dema">DEMÀ</string>
+    <string name="temp_max">T. Màx.</string>
+    <string name="temp_min">T. Míx.</string>
+    <string name="prob_pluja">Prob. de Pluja</string>
+    <string name="vent">Vent</string>
+    <string name="humitat">Humitat</string>
+    <string name="predicció">Predicció</string>
+    <string name="fent_cerca">Fent la Cerca</string>
+
+</resources>

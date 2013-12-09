@@ -1,0 +1,323 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.json.app.ActivitatInici">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pred_manresa"
+                android:id="@+id/txtPredManresa"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avui"
+                android:id="@+id/textView"
+                android:layout_below="@+id/txtPredManresa"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_max"
+                android:id="@+id/lblTMax"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTMax"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/temp_max"
+                android:layout_alignBottom="@+id/lblTMax"
+                android:layout_toRightOf="@+id/lblTMax"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_min"
+                android:id="@+id/lblTMin"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblTMax"
+                android:layout_alignLeft="@+id/lblTMax"
+                android:layout_alignStart="@+id/lblTMax" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTMin"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/temp_min"
+                android:layout_alignBottom="@+id/lblTMin"
+                android:layout_toRightOf="@+id/lblTMin"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prob_pluja"
+                android:id="@+id/lblProbPluja"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblTMin"
+                android:layout_alignLeft="@+id/lblTMin"
+                android:layout_alignStart="@+id/lblTMin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProbPluja"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/prob_pluja"
+                android:layout_alignBottom="@+id/lblProbPluja"
+                android:layout_toRightOf="@+id/lblProbPluja"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vent"
+                android:id="@+id/lblVent"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblProbPluja"
+                android:layout_alignLeft="@+id/lblProbPluja"
+                android:layout_alignStart="@+id/lblProbPluja" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtVent"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/vent"
+                android:layout_alignBottom="@+id/lblVent"
+                android:layout_toRightOf="@+id/lblVent"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/humitat"
+                android:id="@+id/lblHumitat"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblVent"
+                android:layout_alignLeft="@+id/lblVent"
+                android:layout_alignStart="@+id/lblVent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHumitat"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/humitat"
+                android:layout_alignBottom="@+id/lblHumitat"
+                android:layout_toRightOf="@+id/lblHumitat"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dema"
+                android:id="@+id/txtDema"
+                android:layout_below="@+id/txtHumitat"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_max"
+                android:id="@+id/lblTMaxDema"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/txtDema"
+                android:layout_alignLeft="@+id/txtDema"
+                android:layout_alignStart="@+id/txtDema" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTMaxDema"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/temp_max"
+                android:layout_alignBottom="@+id/lblTMaxDema"
+                android:layout_toRightOf="@+id/lblTMaxDema"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_min"
+                android:id="@+id/lblTMinDema"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblTMaxDema"
+                android:layout_alignLeft="@+id/lblTMaxDema"
+                android:layout_alignStart="@+id/lblTMaxDema" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTMinDema"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/temp_min"
+                android:layout_alignBottom="@+id/lblTMinDema"
+                android:layout_toRightOf="@+id/lblTMinDema"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prob_pluja"
+                android:id="@+id/lblProbPlujaDema"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblTMinDema"
+                android:layout_alignLeft="@+id/lblTMinDema"
+                android:layout_alignStart="@+id/lblTMinDema" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtProbPlujaDema"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/prob_pluja"
+                android:layout_alignBottom="@+id/lblProbPlujaDema"
+                android:layout_toRightOf="@+id/lblProbPlujaDema"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vent"
+                android:id="@+id/lblVentDema"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblProbPlujaDema"
+                android:layout_alignLeft="@+id/lblProbPlujaDema"
+                android:layout_alignStart="@+id/lblProbPlujaDema" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtVentDema"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/vent"
+                android:layout_alignBottom="@+id/lblVentDema"
+                android:layout_toRightOf="@+id/lblVentDema"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/humitat"
+                android:id="@+id/lblHumitatDema"
+                android:layout_gravity="left|top"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@+id/lblVentDema"
+                android:layout_alignLeft="@+id/lblVentDema"
+                android:layout_alignStart="@+id/lblVentDema" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHumitatDema"
+                android:textSize="20sp"
+                android:textIsSelectable="false"
+                android:textColor="@color/blue"
+                android:text="@string/humitat"
+                android:layout_alignBottom="@+id/lblHumitatDema"
+                android:layout_toRightOf="@+id/lblHumitatDema"
+                android:layout_marginLeft="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cercar"
+                android:id="@+id/btCerca"
+                android:layout_gravity="center_horizontal|bottom"
+                android:onClick="onClickCercar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         If you're not building against API 17 or higher, use
+         android:layout_gravity="left" instead. -->
+    <!-- The drawer is given a fixed width in dp and extends the full height of
+         the container. -->
+    <fragment
+        android:id="@+id/navigation_drawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:name="com.json.app.NavigationDrawerFragment" />
+
+</android.support.v4.widget.DrawerLayout>
